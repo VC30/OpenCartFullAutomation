@@ -1,0 +1,63 @@
+07:59:54.218 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Adisa Ramon\git\repository\Opencart121\master.xml
+
+08:00:13.284 [main] INFO  testCases.TC001_AccountRegistrationTest - ********** starting TC001_AccountRegistrationTest *********
+08:00:13.373 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on my account
+08:00:14.411 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on register
+08:00:14.413 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing customers details
+08:00:16.244 [main] INFO  testCases.TC001_AccountRegistrationTest - Validating expected message....
+08:00:16.282 [main] INFO  testCases.TC001_AccountRegistrationTest - ********** finished TC001_AccountRegistrationTest *********
+11:56:09.832 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Adisa Ramon\git\repository\Opencart121\master.xml
+
+12:02:54.784 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Adisa Ramon\git\repository\Opencart121\master.xml
+
+12:08:07.959 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Adisa Ramon\git\repository\Opencart121\master.xml
+
+13:29:40.753 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Adisa Ramon\git\repository\Opencart121\master.xml
+
+13:30:14.728 [main] INFO  testCases.TC001_AccountRegistrationTest - ********** starting TC001_AccountRegistrationTest *********
+13:30:14.826 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on my account
+13:30:16.096 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on register
+13:30:16.100 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing customers details
+13:30:18.041 [main] INFO  testCases.TC001_AccountRegistrationTest - Validating expected message....
+13:30:18.077 [main] INFO  testCases.TC001_AccountRegistrationTest - ********** finished TC001_AccountRegistrationTest *********
+13:44:14.900 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Adisa Ramon\git\repository\Opencart121\master.xml
+
+13:48:55.263 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Adisa Ramon\git\repository\Opencart121\master.xml
+
+13:48:58.960 [main] INFO  testCases.TC002_LoginTest - Local WebDriver initialized with Browser: chrome
+13:49:09.549 [main] INFO  testCases.TC001_AccountRegistrationTest - Local WebDriver initialized with Browser: chrome
+13:49:13.913 [main] INFO  testCases.TC001_AccountRegistrationTest - ********** starting TC001_AccountRegistrationTest *********
+13:49:13.998 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on my account
+13:49:14.990 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on register
+13:49:14.994 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing customers details
+13:49:16.791 [main] INFO  testCases.TC001_AccountRegistrationTest - Validating expected message....
+13:49:16.842 [main] INFO  testCases.TC001_AccountRegistrationTest - ********** finished TC001_AccountRegistrationTest *********
+13:50:09.231 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Adisa Ramon\git\repository\Opencart121\master.xml
+
+13:50:13.148 [main] INFO  testCases.TC002_LoginTest - Local WebDriver initialized with Browser: chrome
+13:50:30.093 [main] INFO  testCases.TC001_AccountRegistrationTest - Local WebDriver initialized with Browser: chrome
+13:50:37.212 [main] INFO  testCases.TC001_AccountRegistrationTest - ********** starting TC001_AccountRegistrationTest *********
+13:50:37.304 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on my account
+13:50:38.943 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on register
+13:50:38.948 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing customers details
+13:50:40.839 [main] INFO  testCases.TC001_AccountRegistrationTest - Validating expected message....
+13:50:40.879 [main] INFO  testCases.TC001_AccountRegistrationTest - ********** finished TC001_AccountRegistrationTest *********
+13:52:55.146 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Adisa Ramon\git\repository\Opencart121\master.xml
+
+13:53:05.593 [main] INFO  testCases.TC002_LoginTest - Remote WebDriver initialized with OS: Windows, Browser: chrome
+13:53:17.110 [main] INFO  testCases.TC001_AccountRegistrationTest - Remote WebDriver initialized with OS: Windows, Browser: chrome
+13:53:25.891 [main] INFO  testCases.TC001_AccountRegistrationTest - ********** starting TC001_AccountRegistrationTest *********
+13:53:26.035 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on my account
+13:53:29.110 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on register
+13:53:29.115 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing customers details
+13:53:31.317 [main] INFO  testCases.TC001_AccountRegistrationTest - Validating expected message....
+13:53:31.379 [main] INFO  testCases.TC001_AccountRegistrationTest - ********** finished TC001_AccountRegistrationTest *********

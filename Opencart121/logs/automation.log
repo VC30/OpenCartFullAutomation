@@ -1,0 +1,122 @@
+13:55:27.691 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Adisa Ramon\git\repository\Opencart121\master.xml
+
+13:55:30.742 [main] INFO  testCases.TC002_LoginTest - Local WebDriver initialized with Browser: chrome
+13:55:52.847 [main] INFO  testCases.TC001_AccountRegistrationTest - Local WebDriver initialized with Browser: chrome
+13:55:59.650 [main] INFO  testCases.TC001_AccountRegistrationTest - ********** starting TC001_AccountRegistrationTest *********
+13:55:59.741 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on my account
+13:56:00.935 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on register
+13:56:00.938 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing customers details
+13:56:02.778 [main] INFO  testCases.TC001_AccountRegistrationTest - Validating expected message....
+13:56:02.824 [main] INFO  testCases.TC001_AccountRegistrationTest - ********** finished TC001_AccountRegistrationTest *********
+11:31:30.630 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Adisa Ramon\git\repository\Opencart121\grid-docker.xml
+
+11:46:05.014 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Adisa Ramon\git\repository\Opencart121\grid-docker.xml
+
+13:55:29.874 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Adisa Ramon\git\repository\Opencart121\grid-docker.xml
+
+13:55:40.577 [main] INFO  testCases.TC002_LoginTest - Local WebDriver initialized with Browser: chrome
+13:55:50.889 [main] INFO  testCases.TC001_AccountRegistrationTest - Local WebDriver initialized with Browser: chrome
+13:55:55.501 [main] INFO  testCases.TC001_AccountRegistrationTest - ********** starting TC001_AccountRegistrationTest *********
+13:55:55.591 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on my account
+13:55:57.329 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on register
+13:55:57.333 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing customers details
+13:55:59.197 [main] INFO  testCases.TC001_AccountRegistrationTest - Validating expected message....
+13:55:59.229 [main] INFO  testCases.TC001_AccountRegistrationTest - ********** finished TC001_AccountRegistrationTest *********
+14:10:10.058 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Adisa Ramon\git\repository\Opencart121\grid-docker.xml
+
+14:10:58.075 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Adisa Ramon\git\repository\Opencart121\master.xml
+
+15:14:58.929 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Adisa Ramon\git\repository\Opencart121\grid-docker.xml
+
+17:01:45.992 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Adisa Ramon\git\repository\Opencart121\grid-docker.xml
+
+21:28:30.784 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Adisa Ramon\git\repository\Opencart121\grid-docker.xml
+
+21:42:17.936 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Adisa Ramon\git\repository\Opencart121\grid-docker.xml
+
+21:50:43.028 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Adisa Ramon\git\repository\Opencart121\grid-docker.xml
+
+21:50:47.302 [main] INFO  testCases.TC002_LoginTest - Remote WebDriver initialized with OS: Linux, Browser: chrome
+21:53:56.521 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Adisa Ramon\git\repository\Opencart121\grid-docker.xml
+
+22:15:02.000 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Adisa Ramon\git\repository\Opencart121\grid-docker.xml
+
+22:15:06.758 [main] INFO  testCases.TC002_LoginTest - Remote WebDriver initialized successfully.
+22:18:50.556 [main] ERROR testCases.TC001_AccountRegistrationTest - Failed to initialize Remote WebDriver: 
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'LAPTOP-PGDI143N', ip: '192.168.0.167'
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:563) ~[selenium-remote-driver-4.24.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245) ~[selenium-remote-driver-4.24.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174) ~[selenium-remote-driver-4.24.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:152) ~[selenium-remote-driver-4.24.0.jar:?]
+	at testBase.BaseClass.setUp(BaseClass.java:81) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:418) ~[selenium-http-4.24.0.jar:?]
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42) ~[selenium-http-4.24.0.jar:?]
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55) ~[selenium-http-4.24.0.jar:?]
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:374) ~[selenium-http-4.24.0.jar:?]
+	at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54) ~[selenium-remote-driver-4.24.0.jar:?]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:89) ~[selenium-remote-driver-4.24.0.jar:?]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75) ~[selenium-remote-driver-4.24.0.jar:?]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61) ~[selenium-remote-driver-4.24.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162) ~[selenium-remote-driver-4.24.0.jar:?]
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53) ~[selenium-remote-driver-4.24.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.24.0.jar:?]
+	... 30 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095) ~[?:?]
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:401) ~[selenium-http-4.24.0.jar:?]
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42) ~[selenium-http-4.24.0.jar:?]
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55) ~[selenium-http-4.24.0.jar:?]
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:374) ~[selenium-http-4.24.0.jar:?]
+	at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54) ~[selenium-remote-driver-4.24.0.jar:?]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:89) ~[selenium-remote-driver-4.24.0.jar:?]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75) ~[selenium-remote-driver-4.24.0.jar:?]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61) ~[selenium-remote-driver-4.24.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162) ~[selenium-remote-driver-4.24.0.jar:?]
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53) ~[selenium-remote-driver-4.24.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.24.0.jar:?]
+	... 30 more
