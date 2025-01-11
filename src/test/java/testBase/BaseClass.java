@@ -122,7 +122,7 @@ public org.apache.logging.log4j.Logger logger;
 		            EdgeOptions edgeOptions = new EdgeOptions();
 		            edgeOptions.addArguments("--headless");
 		            driver = new EdgeDriver(edgeOptions);
-		            break;
+		            break; //breaking
 
 		        default: 
 		            System.out.println("Invalid browser name...");
