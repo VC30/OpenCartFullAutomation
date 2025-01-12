@@ -2,7 +2,6 @@
 # For more information see: https://github.com/actions/setup-java/blob/main/docs/advanced-usage.md#apache-maven-with-a-settings-path
 
 name: Maven Package
-
 on:
   workflow_dispatch:
   push:
@@ -22,16 +21,17 @@ jobs:
         sudo apt-get install -y xvfb
         export DISPLAY=:99
         Xvfb :99 &
+        sleep 5
         
-    - name: Set up JDK 17
+    - name: Set up JDK 11
       uses: actions/setup-java@v4
       with:
-        java-version: '17'
+        java-version: '11'
         distribution: 'temurin'
         cache: maven
       
     - name: Build with Maven
-      run: mvn clean test -DXmlFile=pom.xml -Dmaven.test.failure.ignore=true #the last piece is to allow the code move ...
+      run: mvn clean test #-DXmlFile=pom.xml -Dmaven.test.failure.ignore=true #the last piece is to allow the code move ...
     - name: Archive artifacts                                                #...to the next line even if there is failure
       uses: actions/upload-artifact@v3
       with:
