@@ -27,7 +27,7 @@ jobs:
       run: sudo apt-get install -y google-chrome-stable
 
     - name: Set DISPLAY variable 
-      run: echo "::set-env name=DISPLAY::99"
+      run: echo "DISPLAY=:99" >> $GITHUB_ENV
       
     - name: Build with Maven
       run: mvn clean test -DXmlFile=pom.xml -Dmaven.test.failure.ignore=true #the last piece is to allow the code move ...
