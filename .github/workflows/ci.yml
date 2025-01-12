@@ -1,0 +1,39 @@
+# This workflow will build a package using Maven and then publish it to GitHub packages when a release is created
+# For more information see: https://github.com/actions/setup-java/blob/main/docs/advanced-usage.md#apache-maven-with-a-settings-path
+
+name: Maven Package
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Xvfb
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y xvfb
+        export DISPLAY=:99
+        Xvfb :99 &
+        
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+      
+    - name: Build with Maven
+      run: mvn clean test -DXmlFile=pom.xml -Dmaven.test.failure.ignore=true #the last piece is to allow the code move ...
+    - name: Archive artifacts                                                #...to the next line even if there is failure
+      uses: actions/upload-artifact@v3
+      with:
+        name: sparkHtml
+        path: ./reports/*.html
