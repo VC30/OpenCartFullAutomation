@@ -102,7 +102,7 @@ public org.apache.logging.log4j.Logger logger;
 		}
 		*/
 		
-		else if("local".equals(executionEnv)) 
+	/*	else if("local".equals(executionEnv)) 
 		{
 		    switch(br.toLowerCase()) 
 		    {
@@ -130,6 +130,38 @@ public org.apache.logging.log4j.Logger logger;
 		    }
 		    logger.info("Local WebDriver initialized in headless mode with Browser: " + br);
 		}
+
+	*/
+		else if("local".equals(executionEnv)) 
+{
+    switch(br.toLowerCase()) 
+    {
+        case "chrome": 
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.addArguments("--headless", "--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage");
+            driver = new ChromeDriver(chromeOptions);
+            break; 
+
+        case "firefox":
+            FirefoxOptions firefoxOptions = new FirefoxOptions();
+            firefoxOptions.addArguments("--headless");
+            driver = new FirefoxDriver(firefoxOptions);
+            break;
+
+        case "edge": 
+            EdgeOptions edgeOptions = new EdgeOptions();
+            edgeOptions.addArguments("--headless");
+            driver = new EdgeDriver(edgeOptions);
+            break;
+
+        default: 
+            System.out.println("Invalid browser name...");
+            return; 
+    }
+    logger.info("Local WebDriver initialized in headless mode with Browser: " + br);
+}
+
+
 		else {
 			throw new IllegalArgumentException("Invalid execution environment: " + executionEnv);
 		}
