@@ -39,7 +39,7 @@ public org.apache.logging.log4j.Logger logger;
 	
 	@BeforeClass(groups= {"Sanity","Regression","Master"})
 	@Parameters({"os","browser"})
-	public void setUp(@Optional("Windows") String os, String br) throws IOException {
+	public void setUp(@Optional("Windows") String os,@Optional("chrome") String br) throws IOException {
 		
 		FileReader file = new FileReader("./src//test//resources//config.properties"); //to fetch parameters from config file
 		p = new Properties();
