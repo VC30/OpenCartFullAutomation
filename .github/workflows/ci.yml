@@ -2,6 +2,7 @@
 # For more information see: https://github.com/actions/setup-java/blob/main/docs/advanced-usage.md#apache-maven-with-a-settings-path
 
 name: Maven Package
+
 on:
   workflow_dispatch:
   push:
@@ -12,32 +13,74 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        browser: [chrome, firefox, edge]
     
     steps:
     - uses: actions/checkout@v4
+    
+    # Install dependencies for Xvfb and the browsers
     - name: Set up Xvfb
       run: |
-        chmod +x ./scripts/InstallChrome.sh
-        ./scripts/InstallChrome.sh
-  #      sudo apt-get update
-  #      sudo apt-get install -y xvfb
-  #      export DISPLAY=:99
-  #      Xvfb :99 -screen 0 1024x768x16 &
-  #      sleep 10
-        
+        sudo apt-get update
+        sudo apt-get install -y xvfb wget curl unzip
+        export DISPLAY=:99
+        Xvfb :99 -screen 0 1024x768x16 &
+        sleep 10
+
+    # Set up JDK 11
     - name: Set up JDK 11
       uses: actions/setup-java@v4
       with:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-      
-    - name: Build with Maven
-  #    env:
-  #      DISPLAY: :99
+
+    # Install browsers and WebDriver binaries
+    - name: Install Browser and WebDriver
+      run: |
+        if [[ "${{ matrix.browser }}" == "chrome" ]]; then
+          echo "Installing Google Chrome"
+          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo dpkg -i google-chrome-stable_current_amd64.deb
+          sudo apt-get install -f -y
+          rm google-chrome-stable_current_amd64.deb
+          CHROMEDRIVER_VERSION=$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE)
+          wget https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip
+          unzip chromedriver_linux64.zip
+          sudo mv chromedriver /usr/local/bin/
+          rm chromedriver_linux64.zip
+        elif [[ "${{ matrix.browser }}" == "firefox" ]]; then
+          echo "Installing Firefox"
+          sudo apt-get install -y firefox
+          GECKODRIVER_VERSION=$(curl -sS https://github.com/mozilla/geckodriver/releases/latest | grep -oP '(?<=tag/)[^"]*')
+          wget https://github.com/mozilla/geckodriver/releases/download/v${GECKODRIVER_VERSION}/geckodriver-v${GECKODRIVER_VERSION}-linux64.tar.gz
+          tar -xvzf geckodriver-v${GECKODRIVER_VERSION}-linux64.tar.gz
+          sudo mv geckodriver /usr/local/bin/
+          rm geckodriver-v${GECKODRIVER_VERSION}-linux64.tar.gz
+        elif [[ "${{ matrix.browser }}" == "edge" ]]; then
+          echo "Installing Microsoft Edge"
+          wget https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_107.0.1418.52-1_amd64.deb
+          sudo dpkg -i microsoft-edge-stable_107.0.1418.52-1_amd64.deb
+          sudo apt-get install -f -y
+          EDGE_DRIVER_VERSION=$(curl -sS https://msedgedriver.azureedge.net/LATEST_STABLE_VERSION)
+          wget https://msedgedriver.azureedge.net/${EDGE_DRIVER_VERSION}/msedgedriver_linux64.zip
+          unzip msedgedriver_linux64.zip
+          sudo mv msedgedriver /usr/local/bin/
+          rm msedgedriver_linux64.zip
+        fi
+
+    # Run tests with Maven
+    - name: Run Tests with Maven on ${{ matrix.browser }}
+      env:
+        DISPLAY: :99
+        BROWSER: ${{ matrix.browser }}
       run: mvn -B package --file pom.xml test
-      
-    - name: Archive test reports                                               
+
+    # Archive test reports
+    - name: Archive test reports
       uses: actions/upload-artifact@v3
       with:
         name: test-reports
