@@ -33,7 +33,7 @@ jobs:
     - name: Build with Maven
       env:
         DISPLAY: :99
-      run: mvn clean test -X
+      run: mvn -B package --file pom.xml test
       
     - name: Archive test reports                                               
       uses: actions/upload-artifact@v3
